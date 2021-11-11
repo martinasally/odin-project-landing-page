@@ -1,33 +1,37 @@
+html, body {
+    height: 100%;
+    width:100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .header, .greeting {
-    /* background-color:#1F2937; */
-    /* color: white; */
+    background-color:#1F2937;
+    color: white;
 }
 
 .header {
     display:flex;
-    border: 1px solid black;
+    height:50px;
 }
 
 .header .center {
     flex: 1;
 }
 
-.content {
-    flex:1 1 0px;
-    border: 1px solid black;
-}
 
 /* --------------------- */
 
 .greeting {
     display:flex;
     justify-content: center;
+    align-items: center;
+    height: 200px;
 }
 
 .greeting .left {
@@ -45,7 +49,9 @@ body {
 .info {
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height:200px;
 }
 
 
@@ -73,7 +79,9 @@ body {
 .quotation {
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height:200px;
 }
 
 .quotation .bottom {
@@ -85,6 +93,8 @@ body {
 .call {
     display:flex;
     justify-content: center;
+    align-items: center;
+    height:200px;
 }
 
 /* --------------------- */
@@ -92,6 +102,6 @@ body {
 .footer {
     display:flex;
     justify-content: center;
-    border: 1px solid black;
+    height:50px;
 }
 
