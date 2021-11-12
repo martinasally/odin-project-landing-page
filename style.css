@@ -7,9 +7,17 @@ body {
     margin:0px;
 }
 
-body > * {
+body > * > * {
     padding: 50px;
     width: 700px;
+}
+
+.blue {
+    width:100%;
+    background-color:#1F2937;
+    border:1px solid red;
+    display: flex;
+    justify-content: center;
 }
 
 .header, .greeting {
