@@ -26,6 +26,13 @@ body > * > * {
     justify-content: center;
 }
 
+.dark-grey {
+    width:100%;
+    background-color:#1F2937;
+    display: flex;
+    justify-content: center;
+}
+
 .header, .greeting {
     background-color:#1F2937;
     color: white;
@@ -213,6 +220,7 @@ a {
     justify-content: center;
     height:50px;
     padding-bottom: 10px;
-
+    color:#e5e7ebaf;
+    font-size: 15px;
 }
 
