@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,7 +144,7 @@ a {
 
 .info .bottom .item .text {
     height:auto;
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
     font-size: 15px;
     color: #616161;
@@ -163,8 +163,9 @@ a {
 .quotation .top {
     font-size: 30px;
     font-style: italic;
-    font-weight: lighter;
-    color:#323c4b8f
+    font-weight: 20;
+    color:#1e2735ad;
+    padding-bottom:20px;
 }
 
 .quotation .bottom {
@@ -178,7 +179,31 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
-    height:200px;
+    gap:50px;
+    padding:50px 10px;
+    margin:100px;
+    background-color: #3882F6;
+    border-radius:5px;
+}
+
+.call .left .top {
+    color:#F9FAF8;
+    font-weight:bold;
+    font-size: large;
+}
+
+.call .left .bottom {
+    color:#f9faf8bb;
+    font-size: small;
+}
+
+.call .right .sign-up {
+    background-color: #3882F6;
+    border:1px solid #F9FAF8;
+    border-radius: 4px;
+    width:fit-content;
+    padding:8px 20px;
+    color: #F9FAF8;
 }
 
 /* --------------------- */
