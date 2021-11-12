@@ -15,7 +15,13 @@ body > * > * {
 .blue {
     width:100%;
     background-color:#1F2937;
-    border:1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.grey {
+    width:100%;
+    background-color:#E5E7EB;
     display: flex;
     justify-content: center;
 }
@@ -93,7 +99,7 @@ a {
 .greeting .sign-up {
     background-color: #3882F6;
     border:0px;
-    border-radius: 2px;
+    border-radius: 5px;
     width:fit-content;
     padding:8px 20px;
     color:#F9FAF8
@@ -151,11 +157,19 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:200px;
+    padding: 75px 50px;
+}
+
+.quotation .top {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;
+    color:#323c4b8f
 }
 
 .quotation .bottom {
     text-align: right;
+    font-weight: bold;
 }
 
 /* --------------------- */
@@ -174,5 +188,6 @@ a {
     justify-content: center;
     height:50px;
     padding-bottom: 10px;
+
 }
 
