@@ -1,13 +1,15 @@
-html, body {
-    height: 100%;
-    width:100%;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin:0px;
+}
+
+body > * {
+    padding: 50px;
+    width: 700px;
 }
 
 .header, .greeting {
@@ -17,11 +19,28 @@ body {
 
 .header {
     display:flex;
-    height:50px;
+    align-items: top;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
-.header .center {
-    flex: 1;
+.header .left {
+    font-size: 24px;
+    font-weight: bold;
+    color:#F9FAF8;
+}
+
+.header .right {
+    display: flex;
+    flex:1;
+    justify-content: end;
+    gap:15px;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 15px;
 }
 
 
@@ -31,17 +50,45 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    gap:50px;
 }
 
 .greeting .left {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    height:300px;
+    width:400px;
+    gap:10px;
+}
+
+#greeting-text-one {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8
+}
+
+#greeting-text-two {
+    font-size: 15px;
+    color: #E5E7EB;
+}
+
+.greeting .right {
+    justify-content: center;
 }
 
 .greeting .right img {
-    height:200px;
-    width:200px;
+    height:300px;
+    width:auto;
+}
+
+.greeting .sign-up {
+    background-color: #3882F6;
+    border:0px;
+    border-radius: 2px;
+    width:fit-content;
+    padding:8px 20px;
+    color:#F9FAF8
 }
 
 /* --------------------- */
@@ -51,27 +98,42 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:200px;
+    gap:50px;
+    width: 700px;
 }
 
+.info .top {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+}
 
 .info .bottom {
     display: flex;
     justify-content: center;
+    gap:30px;
+}
+
+.info .bottom .item {
+    display:flex;
+    flex-direction: column;
     gap:10px;
+    align-items: center;
 }
 
 .info .bottom .item .box {
     border-radius:10px;
-    border: 2px solid black;
+    border: 3px solid #3882F6;
     height:150px;
     width:150px;
 }
 
 .info .bottom .item .text {
     height:auto;
-    width:150px;
+    max-width: 80%;
     text-align: center;
+    font-size: 15px;
+    color: #616161;
 }
 
 /* --------------------- */
@@ -103,5 +165,6 @@ body {
     display:flex;
     justify-content: center;
     height:50px;
+    padding-bottom: 10px;
 }
 
